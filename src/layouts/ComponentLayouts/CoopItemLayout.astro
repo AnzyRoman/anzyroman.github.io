@@ -1,0 +1,37 @@
+---
+const { title, text, isButton } = Astro.props
+---
+
+<div
+    class="flex flex-row w-full items-center justify-center">
+    <div
+        class="flex items-center justify-center w-1/6 text-5xl">
+        <span
+            class="flex relative w-16 h-16 items-center justify-center">
+            <div
+                class="w-2 h-10 bg-green absolute -top-1 -left-1 overflow-hidden">
+            </div>
+            <div
+                class="w-10 h-2 bg-green absolute -top-1 -left-1 overflow-hidden">
+            </div>
+            <div
+                class="w-2 h-10 bg-green absolute -bottom-1 -right-1 overflow-hidden">
+            </div>
+            <div
+                class="w-10 h-2 bg-green absolute -bottom-1 -right-1 overflow-hidden">
+            </div>1
+        </span>
+    </div>
+    <div
+        class="w-5/6 space-y-2 px-8 py-3 from-green-100 bg-gradient-to-r">
+        <h2 class="font-bold text-3xl lg:text-xl">
+            Cośtam costam bla bla ba
+        </h2>
+        <p class="text-justify">
+            Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever since
+            the 1500s.
+        </p>
+    </div>
+</div>

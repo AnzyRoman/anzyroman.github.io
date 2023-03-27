@@ -1,0 +1,23 @@
+---
+const { text, style, link, lineStyle, hover } = Astro.props
+---
+
+<a
+    href={link}
+    class={`flex relative ${style} items-center justify-center self-center group`}>
+    <div
+        class={`w-2 h-${lineStyle} bg-green absolute -top-1 -left-1 overflow-hidden h- group-hover:h-[${hover}rem] transition-all ease-linear`}>
+    </div>
+    <div
+        class={`w-${lineStyle} h-2 bg-green absolute -top-1 -left-1 overflow-hidden group-hover:w-[${hover}rem] transition-all ease-linear`}>
+    </div>
+    <div
+        class={`w-2 h-${lineStyle} bg-green absolute -bottom-1 -right-1 overflow-hidden group-hover:h-[${hover}rem] transition-all ease-linear`}>
+    </div>
+    <div
+        class={`w-${lineStyle} h-2 bg-green absolute -bottom-1 -right-1 overflow-hidden group-hover:w-[${hover}rem] transition-all ease-linear`}>
+    </div>
+    <span class="w-full h-full text-center p-1">
+        {text}
+    </span>
+</a>

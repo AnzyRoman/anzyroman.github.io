@@ -1,0 +1,49 @@
+---
+import Divider from 'components/SmallComponents/Divider.astro'
+import ImgLinkLt from 'layouts/ComponentLayouts/ImgLinkLt.astro'
+---
+
+<section id="info">
+    <div
+        class="container flex flex-col mx-auto px-5 space-y-5">
+        <p class="text-green font-bold">
+            CZYM SĄ DEKLARACJE ŚRODOWISKOWE
+        </p>
+        <h2
+            class="font-bold lg:text-4xl text-2xl text-justify">
+            Deklaracje środowiskowe to dokumenty, w których
+            organizacje lub jednostki określają swoje
+            zobowiązania wobec ochrony środowiska i
+            zrównoważonego rozwoju.
+        </h2>
+        <Divider />
+        <div
+            class="flex lg:flex-row w-full justify-evenly items-center flex-col">
+            <p
+                class="text-justify lg:w-1/2 p-3 text-lg text-slate-600 font-semibold w-full">
+                Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown
+                printer took a galley of type and scrambled
+                it to make a type specimen book. It has
+                survived not only five centuries, but also
+                the leap into electronic typesetting,
+                remaining essentially unchanged. <br /><br
+                />It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem
+                Ipsum passages, and more recently with
+                desktop publishing software like Aldus
+                PageMaker including versions of Lorem Ipsum.
+            </p>
+            <ImgLinkLt
+                background="bg-process-bg"
+                width="lg:w-1/2 w-full"
+                site="/"
+                linkText="cośtma"
+                linkInfo="costam cośtam">
+                <div></div>
+            </ImgLinkLt>
+        </div>
+    </div>
+</section>

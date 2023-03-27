@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    section {
+        @apply py-10;
+    }
+    body {
+        @apply font-montserrat;
+    }
+    input,
+    textarea {
+        @apply rounded-lg p-1 border-2;
+    }
+    label {
+        @apply text-green font-semibold;
+    }
+    h1,
+    h2 {
+        @apply text-center md:text-left;
+    }
+}

@@ -1,0 +1,53 @@
+---
+import ListItem from 'components/CoopSections/ListItem.astro'
+import budynki from 'images/budynki.jpg'
+import { coopItems } from 'Stores/CoopItems'
+---
+
+<section id="coop" class="pb-0">
+    <div class="mx-auto container md:px-5 mt-10">
+        <div
+            class="w-full flex flex-col md:flex-row relative md:space-x-5">
+            <div
+                class="flex flex-col space-y-5 px-5 md:px-0 w-full md:w-1/2 lg:w-7/12">
+                <p class="text-green font-bold">
+                    WSPÓŁPRACA
+                </p>
+                <h1 class="font-bold lg:text-5xl text-4xl">
+                    Zobacz, jak wygląda współpraca z nami
+                </h1>
+                <div class="w-16 h-1 bg-green my-1"></div>
+                <p class="text-justify pb-5">
+                    Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard
+                    dummy text ever since the 1500s.
+                </p>
+            </div>
+            <img
+                src={budynki}
+                class="lg:w-96 lg:h-96 md:w-72 md:h-96 w-full md:right-0 md:top-0 md:rounded-xl md:absolute object-cover"
+            />
+        </div>
+
+        <div class="flex flex-col w-full px-3">
+            <div
+                class="flex flex-row space-x-4 justify-end md:h-16 lg:h-24">
+                <div class="w-1/6"></div>
+                <div
+                    class="md:flex hidden w-5/6 h-full from-green/50 bg-gradient-to-r rounded-t-lg">
+                </div>
+            </div>
+            {
+                coopItems.map((item) => (
+                    <ListItem
+                        number={item.number}
+                        title={item.title}
+                        text={item.text}
+                        button={item.button}
+                    />
+                ))
+            }
+        </div>
+    </div>
+</section>

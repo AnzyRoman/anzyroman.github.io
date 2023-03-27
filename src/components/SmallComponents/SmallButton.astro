@@ -1,0 +1,18 @@
+---
+const { link, text } = Astro.props
+---
+
+<a
+    href={link}
+    class="flex relative p-1 text-xl items-center justify-center self-end group">
+    <div
+        class="w-1 h-3 bg-green absolute -bottom-1 -right-1 overflow-hidden group-hover:h-7 transition-all ease-linear">
+    </div>
+    <div
+        class="w-3 h-1 bg-green absolute -bottom-1 -right-1 overflow-hidden group-hover:w-7 transition-all ease-linear">
+    </div>
+    <span
+        class="w-full h-full text-center group-hover:font-bold">
+        {text}
+    </span>
+</a>
